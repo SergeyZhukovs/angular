@@ -1,0 +1,20 @@
+<div class="tag-input-component">
+  <div class="tags">
+    <div class="tag" *ngFor="let item of tagValue; let i = index">
+      {{item}}
+      <div class="remove-icon" (click)="removeItem(i)"></div>
+    </div>
+  </div>
+  <div class="input-section">
+    <input
+      type="text"
+      autocomplete="off"
+      tabindex="0"
+      [(ngModel)]="name"
+      [placeholder]="placeholder"
+      (keyup)="typing($event)"
+      (keydown.enter)="enterTag($event)"
+      (blur)="onTouch()"
+    />
+  </div>
+</div>

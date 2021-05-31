@@ -1,6 +1,29 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+.gitignore
+/e2e
+/src/assets
+/src/environments
+/src/favicon.ico
+/src/index.htm
+/src/main.ts
+/src/polyfills.ts
+/src/styles.scss
+/src/test.ts
+.browserslistrc
+.editorconfig
+angular.json
+karma.conf.js
+package-lock.json
+package.json
+README.md
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
+tslint.json
+/.git
+
 /dist
 /tmp
 /out-tsc
